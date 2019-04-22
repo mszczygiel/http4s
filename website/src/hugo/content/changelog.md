@@ -8,7 +8,7 @@ Maintenance branches are merged before each new release. This change log is
 ordered chronologically, so each release contains all changes described below
 it.
 
-# v0.20.0 (2019-04-20)
+# v0.20.0 (2019-04-22)
 
 ## Announcements
 
@@ -37,6 +37,7 @@ This marks the end of active support for the 0.18 series.  Further releases in t
 ## Enhancements
 * [#2508](https://github.com/http4s/http4s/pull/2508): Add `mediaType` String context macro for validating literals.  Provide the same for `uri` and `qValue`, deprecating `Uri.uri` and `QValue.q`.
 * [#2520](https://github.com/http4s/http4s/pull/2520): Parameterize `selectorThreadFactory` for blaze server.  This allows setting the priority for selector threads.
+* [#2517](https://github.com/http4s/http4s/pull/2517): Add optional argument to override `Histogram`'s buckets in Prometheus middleware. (Source compatible, but breaks binary.)
 
 ## Documentation
 * [#2488](https://github.com/http4s/http4s/pull/2488): Fix bad link in changelog
@@ -49,7 +50,7 @@ This marks the end of active support for the 0.18 series.  Further releases in t
 
 ## Dependency updates
 * blaze-0.14.0
-* jetty-9.4.16.v20190411
+* jetty-9.4.17.v20190418
 * kind-projector-0.10.0 (build only)
 * okhttp-3.14.1
 * mockito-core-2.27.0 (test only)
